@@ -16,6 +16,7 @@ using Microsoft.Extensions.Logging;
 using AutoMapper;
 using FluentValidation;
 using Blog.Infrastructure.Resources;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace Blog.API
 {
@@ -41,7 +42,11 @@ namespace Blog.API
 
             services.AddTransient<IValidator<PostResource>, PostResourceValidator>();
 
-            services.AddMvc();
+            services.AddMvc(options => 
+            {
+                options.ReturnHttpNotAcceptable = true;
+                // options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter())
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -38,6 +38,18 @@ namespace Blog.API.Controllers
             return Ok(postResources);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
+            var postResource = _mapper.Map<Post, PostResource>(post);
+            return Ok(postResource);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post()
         {
