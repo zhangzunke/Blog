@@ -1,0 +1,1213 @@
+2020-02-06 11:08:25.832 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:08:26.475 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:08:26.756 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:08:27.632 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:08:27.634 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:08:27.635 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:08:27.636 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:08:27.637 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:08:28.992 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:08:29.105 +08:00 [INF] Request finished in 119.7021ms 307 
+2020-02-06 11:08:29.194 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:08:29.272 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:08:29.361 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:08:44.131 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:08:44.213 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:08:44.578 +08:00 [INF] Executed DbCommand (78ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:08:45.341 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:08:45.416 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 16027.0643ms
+2020-02-06 11:08:45.430 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:08:45.444 +08:00 [INF] Request finished in 16250.8191ms 200 application/json; charset=utf-8
+2020-02-06 11:08:45.632 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico  
+2020-02-06 11:08:45.641 +08:00 [INF] Request finished in 9.0206ms 404 
+2020-02-06 11:09:37.150 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts  
+2020-02-06 11:09:37.165 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:09:37.167 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:09:37.194 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:09:37.215 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:09:37.243 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:09:37.264 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:09:37.273 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 96.1726ms
+2020-02-06 11:09:37.275 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:09:37.277 +08:00 [INF] Request finished in 126.7167ms 200 application/json; charset=utf-8
+2020-02-06 11:09:52.979 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?fileds=id,title  
+2020-02-06 11:09:52.980 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:09:52.982 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:09:52.995 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:09:53.003 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:09:53.033 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:09:53.057 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:09:53.066 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 80.508ms
+2020-02-06 11:09:53.069 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:09:53.072 +08:00 [INF] Request finished in 93.1969ms 200 application/json; charset=utf-8
+2020-02-06 11:10:14.707 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?fields=id,title  
+2020-02-06 11:10:14.711 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:10:14.722 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:10:14.753 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:10:14.775 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:10:14.802 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:10:14.820 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:10:14.823 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 81.5327ms
+2020-02-06 11:10:14.835 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:10:14.838 +08:00 [INF] Request finished in 131.3895ms 200 application/json; charset=utf-8
+2020-02-06 11:13:02.021 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:13:02.564 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:13:02.718 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:13:03.213 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:13:03.215 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:13:03.216 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:13:03.217 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:13:03.218 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:13:04.981 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:13:05.050 +08:00 [INF] Request finished in 82.0433ms 307 
+2020-02-06 11:13:05.117 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:13:05.201 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:13:05.327 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:13:05.856 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:13:05.910 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:13:06.055 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:13:06.639 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:13:06.683 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1342.899ms
+2020-02-06 11:13:06.703 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:13:06.714 +08:00 [INF] Request finished in 1596.8479ms 200 application/json; charset=utf-8
+2020-02-06 11:13:18.099 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1?fields=id,title  
+2020-02-06 11:13:18.112 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:13:18.126 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:13:18.168 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:13:18.251 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2020-02-06 11:13:18.293 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2020-02-06 11:13:18.299 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 165.3779ms
+2020-02-06 11:13:18.309 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:13:18.313 +08:00 [INF] Request finished in 215.3268ms 200 application/json; charset=utf-8
+2020-02-06 11:31:49.619 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:31:50.064 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:31:50.201 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:31:50.644 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:31:50.646 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:31:50.648 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:31:50.651 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:31:50.652 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:31:51.851 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:31:51.970 +08:00 [INF] Request finished in 152.3762ms 307 
+2020-02-06 11:31:52.070 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:31:52.138 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:31:52.216 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:31:52.608 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:31:52.668 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:31:52.773 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:31:53.262 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:31:53.310 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1074.212ms
+2020-02-06 11:31:53.313 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:31:53.329 +08:00 [INF] Request finished in 1259.5125ms 200 application/json; charset=utf-8
+2020-02-06 11:33:40.913 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:33:41.456 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:33:41.598 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:33:42.131 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:33:42.139 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:33:42.145 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:33:42.146 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:33:42.148 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:33:43.173 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:33:43.235 +08:00 [INF] Request finished in 70.421ms 307 
+2020-02-06 11:33:43.322 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:33:43.390 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:33:43.476 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:33:43.859 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:33:43.894 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:33:44.003 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:33:44.442 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:33:44.485 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 990.9694ms
+2020-02-06 11:33:44.487 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:33:44.494 +08:00 [INF] Request finished in 1172.2402ms 200 application/json; charset=utf-8
+2020-02-06 11:38:09.833 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:38:10.276 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:38:10.380 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:38:10.881 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:38:10.882 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:38:10.884 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:38:10.886 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:38:10.887 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:38:12.097 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:38:12.189 +08:00 [INF] Request finished in 96.4382ms 307 
+2020-02-06 11:38:12.296 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:38:12.385 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:38:12.496 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:38:12.881 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:38:12.932 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:38:13.056 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:38:13.455 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:38:13.525 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1016.1438ms
+2020-02-06 11:38:13.530 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:38:13.536 +08:00 [INF] Request finished in 1240.5251ms 200 application/json; charset=utf-8
+2020-02-06 11:40:02.649 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:40:03.320 +08:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:40:03.457 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:40:03.991 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:40:03.993 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:40:03.994 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:40:03.996 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:40:03.998 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:40:05.591 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:40:05.645 +08:00 [INF] Request finished in 61.2223ms 307 
+2020-02-06 11:40:05.750 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:40:05.808 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:40:05.911 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:40:06.408 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1?fields=id,title  
+2020-02-06 11:40:06.411 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:40:06.448 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:40:06.526 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:40:06.526 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:40:06.626 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:40:06.746 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:40:06.746 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2020-02-06 11:40:06.920 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Dynamic.ExpandoObject'.
+2020-02-06 11:40:07.180 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:40:07.212 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 731.4252ms
+2020-02-06 11:40:07.214 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:40:07.224 +08:00 [INF] Request finished in 815.6068ms 200 application/json; charset=utf-8
+2020-02-06 11:40:07.245 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1328.0231ms
+2020-02-06 11:40:07.247 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:40:07.255 +08:00 [INF] Request finished in 1504.5ms 200 application/json; charset=utf-8
+2020-02-06 11:58:57.865 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:58:58.309 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 11:58:58.411 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 11:58:58.866 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 11:58:58.868 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 11:58:58.870 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 11:58:58.871 +08:00 [INF] Hosting environment: Development
+2020-02-06 11:58:58.873 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 11:59:00.194 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 11:59:00.270 +08:00 [INF] Request finished in 77.0538ms 307 
+2020-02-06 11:59:00.374 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 11:59:00.438 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:00.534 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:59:00.994 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:59:01.050 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:59:01.179 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:59:01.608 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:59:01.687 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1133.2316ms
+2020-02-06 11:59:01.689 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:01.698 +08:00 [INF] Request finished in 1323.6221ms 200 application/json; charset=utf-8
+2020-02-06 11:59:20.510 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?fields=id,title,1  
+2020-02-06 11:59:20.513 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:20.514 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:59:20.529 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 11:59:20.533 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 12.7879ms
+2020-02-06 11:59:20.536 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:20.538 +08:00 [INF] Request finished in 28.2936ms 400 text/plain; charset=utf-8
+2020-02-06 11:59:26.981 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts?fields=id,title  
+2020-02-06 11:59:26.983 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:26.985 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 11:59:27.002 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 11:59:27.015 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 11:59:27.026 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 11:59:27.055 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 11:59:27.060 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 72.6044ms
+2020-02-06 11:59:27.068 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 11:59:27.072 +08:00 [INF] Request finished in 90.6334ms 200 application/json; charset=utf-8
+2020-02-06 14:17:24.599 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:17:24.994 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:17:25.102 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 14:17:25.550 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:17:25.556 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:17:25.557 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:17:25.558 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:17:25.559 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:17:26.571 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:17:26.674 +08:00 [INF] Request finished in 108.357ms 307 
+2020-02-06 14:17:26.781 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:17:26.848 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:17:26.957 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:17:27.373 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:17:27.405 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:17:27.491 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:17:27.823 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:17:27.871 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 892.0633ms
+2020-02-06 14:17:27.880 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:17:27.886 +08:00 [INF] Request finished in 1105.2102ms 200 application/json; charset=utf-8
+2020-02-06 14:18:12.874 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 63
+2020-02-06 14:18:12.877 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:18:12.883 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:18:12.950 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:18:13.112 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 5), @p1='?' (Size = 19), @p2='?', @p3='?', @p4='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Author", "Body", "LastModified", "Remark", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT "Id"
+FROM "Posts"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2020-02-06 14:18:13.194 +08:00 [INF] Executing ObjectResult, writing value of type 'Blog.Infrastructure.Resources.PostResource'.
+2020-02-06 14:18:13.256 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 369.932ms
+2020-02-06 14:18:13.258 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:18:13.259 +08:00 [INF] Request finished in 385.6216ms 201 application/json; charset=utf-8
+2020-02-06 14:27:12.392 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:27:12.826 +08:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:27:12.957 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 14:27:13.470 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:27:13.480 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:27:13.481 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:27:13.482 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:27:13.483 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:27:14.597 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:27:14.693 +08:00 [INF] Request finished in 102.4545ms 307 
+2020-02-06 14:27:14.762 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:27:14.820 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:27:14.884 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:27:15.170 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:27:15.211 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:27:15.315 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:27:15.680 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:27:15.740 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 834.141ms
+2020-02-06 14:27:15.746 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:27:15.757 +08:00 [INF] Request finished in 1002.2218ms 200 application/json; charset=utf-8
+2020-02-06 14:27:20.609 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:27:20.619 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:20.639 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:27:20.744 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:27:20.776 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 134.0151ms
+2020-02-06 14:27:20.778 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:20.782 +08:00 [INF] Request finished in 173.2385ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:27:30.075 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:27:30.078 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:30.080 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:27:30.089 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:27:30.092 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 9.5597ms
+2020-02-06 14:27:30.094 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:30.096 +08:00 [INF] Request finished in 20.9701ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:27:50.212 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 44
+2020-02-06 14:27:50.217 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:50.222 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:27:50.250 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:27:50.439 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 5), @p1='?', @p2='?', @p3='?', @p4='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Author", "Body", "LastModified", "Remark", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT "Id"
+FROM "Posts"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2020-02-06 14:27:50.553 +08:00 [INF] Executing ObjectResult, writing value of type 'Blog.Infrastructure.Resources.PostResource'.
+2020-02-06 14:27:50.592 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 366.1755ms
+2020-02-06 14:27:50.593 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:27:50.597 +08:00 [INF] Request finished in 385.2387ms 201 application/json; charset=utf-8
+2020-02-06 14:28:28.790 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 44
+2020-02-06 14:28:28.792 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:28:28.795 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:29:30.700 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:29:31.190 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:29:31.291 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 14:29:31.701 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:29:31.709 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:29:31.710 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:29:31.712 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:29:31.713 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:29:32.789 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:29:32.827 +08:00 [INF] Request finished in 41.7674ms 307 
+2020-02-06 14:29:32.893 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:29:32.943 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:29:33.005 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:29:33.274 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:29:33.319 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:29:33.411 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:29:33.683 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:29:33.734 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 711.6243ms
+2020-02-06 14:29:33.738 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:29:33.747 +08:00 [INF] Request finished in 853.402ms 200 application/json; charset=utf-8
+2020-02-06 14:29:41.129 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:29:41.133 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:29:41.139 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:29:41.246 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:29:41.268 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 123.9775ms
+2020-02-06 14:29:41.269 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:29:41.273 +08:00 [INF] Request finished in 144.819ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:30:18.655 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:30:19.044 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:30:19.146 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 14:30:19.577 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:30:19.579 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:30:19.582 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:30:19.584 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:30:19.585 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:30:20.693 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:30:20.794 +08:00 [INF] Request finished in 106.1277ms 307 
+2020-02-06 14:30:20.850 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:30:20.894 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:30:20.964 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:30:21.234 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:30:21.264 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:30:21.342 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:30:21.654 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:30:21.707 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 728.3986ms
+2020-02-06 14:30:21.709 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:30:21.717 +08:00 [INF] Request finished in 867.037ms 200 application/json; charset=utf-8
+2020-02-06 14:33:19.801 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:33:20.249 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:33:20.369 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 14:33:20.877 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:33:20.879 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:33:20.881 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:33:20.882 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:33:20.883 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:33:22.186 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:33:22.224 +08:00 [INF] Request finished in 45.7269ms 307 
+2020-02-06 14:33:22.289 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:33:22.365 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:33:22.443 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:33:22.716 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:33:22.755 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:33:22.868 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:33:23.128 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:33:23.184 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 724.1348ms
+2020-02-06 14:33:23.188 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:33:23.194 +08:00 [INF] Request finished in 904.6492ms 200 application/json; charset=utf-8
+2020-02-06 14:33:27.194 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:33:27.198 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:33:27.205 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:33:27.316 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:33:27.349 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 140.2413ms
+2020-02-06 14:33:27.351 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:33:27.353 +08:00 [INF] Request finished in 159.327ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:34:56.357 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:34:56.360 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:34:56.362 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:34:56.372 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:34:56.375 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 10.5365ms
+2020-02-06 14:34:56.377 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:34:56.381 +08:00 [INF] Request finished in 23.5311ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:35:15.579 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/post application/json 31
+2020-02-06 14:35:15.582 +08:00 [INF] Request finished in 3.939ms 404 
+2020-02-06 14:35:21.309 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/post application/json 31
+2020-02-06 14:35:21.347 +08:00 [INF] Request finished in 40.4825ms 404 
+2020-02-06 14:35:27.707 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:35:27.709 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:35:27.711 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:35:27.722 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:35:27.732 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 16.9883ms
+2020-02-06 14:35:27.743 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:35:27.744 +08:00 [INF] Request finished in 37.8336ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:41:13.376 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:41:13.778 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:41:14.338 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:41:14.341 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:41:14.342 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:41:14.343 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:41:14.344 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:41:15.488 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:41:15.574 +08:00 [INF] Request finished in 92.8771ms 307 
+2020-02-06 14:41:15.643 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:41:15.690 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:41:15.742 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:41:16.054 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:41:16.089 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:41:16.189 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:41:16.539 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:41:16.608 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 844.1962ms
+2020-02-06 14:41:16.633 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:41:16.645 +08:00 [INF] Request finished in 1002.3396ms 200 application/json; charset=utf-8
+2020-02-06 14:41:23.230 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:41:23.234 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:41:23.254 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:41:23.447 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:41:23.489 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 232.6029ms
+2020-02-06 14:41:23.511 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:41:23.521 +08:00 [INF] Request finished in 290.7311ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:42:57.390 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:42:57.874 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:42:58.338 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:42:58.346 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:42:58.347 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:42:58.348 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:42:58.351 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:42:59.484 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:42:59.526 +08:00 [INF] Request finished in 48.7598ms 307 
+2020-02-06 14:42:59.580 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:42:59.645 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:42:59.715 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:43:00.093 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:43:00.129 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:43:00.238 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:43:00.803 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:43:00.872 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1142.9007ms
+2020-02-06 14:43:00.894 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:43:00.904 +08:00 [INF] Request finished in 1323.8171ms 200 application/json; charset=utf-8
+2020-02-06 14:43:09.030 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 31
+2020-02-06 14:43:09.037 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:43:09.049 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:46:39.081 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:46:39.473 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:46:39.872 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:46:39.875 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:46:39.877 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:46:39.878 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:46:39.879 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:46:41.212 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:46:41.298 +08:00 [INF] Request finished in 106.1189ms 307 
+2020-02-06 14:46:41.398 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:46:41.494 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:46:41.568 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:46:41.930 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:46:41.972 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:46:42.103 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:46:42.533 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:46:42.598 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1005.9482ms
+2020-02-06 14:46:42.603 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:46:42.624 +08:00 [INF] Request finished in 1225.3686ms 200 application/json; charset=utf-8
+2020-02-06 14:46:58.272 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:46:58.275 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:46:58.292 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:46:58.401 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:46:58.423 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 127.7766ms
+2020-02-06 14:46:58.425 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:46:58.428 +08:00 [INF] Request finished in 155.804ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:48:51.886 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:48:52.248 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:48:52.650 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:48:52.652 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:48:52.653 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:48:52.654 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:48:52.655 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:48:53.817 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:48:53.864 +08:00 [INF] Request finished in 46.6825ms 307 
+2020-02-06 14:48:53.935 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:48:53.981 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:48:54.030 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:48:54.283 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:48:54.325 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:48:54.415 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:48:54.711 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:48:54.759 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 717.2493ms
+2020-02-06 14:48:54.763 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:48:54.769 +08:00 [INF] Request finished in 834.7687ms 200 application/json; charset=utf-8
+2020-02-06 14:49:41.554 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:49:41.556 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:49:41.563 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:52:01.514 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:52:01.902 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:52:02.324 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:52:02.327 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:52:02.329 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:52:02.329 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:52:02.330 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:52:03.544 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:52:03.600 +08:00 [INF] Request finished in 60.5249ms 307 
+2020-02-06 14:52:03.679 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:52:03.740 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:52:03.790 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:52:04.039 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:52:04.079 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:52:04.172 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:52:04.522 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:52:04.582 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 774.5188ms
+2020-02-06 14:52:04.590 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:52:04.606 +08:00 [INF] Request finished in 927.3821ms 200 application/json; charset=utf-8
+2020-02-06 14:52:09.801 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:52:09.807 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:52:09.822 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:52:09.922 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:52:09.944 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 119.4947ms
+2020-02-06 14:52:09.945 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:52:09.948 +08:00 [INF] Request finished in 147.2756ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:53:34.016 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:53:34.422 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 14:53:34.844 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 14:53:34.846 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 14:53:34.847 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 14:53:34.848 +08:00 [INF] Hosting environment: Development
+2020-02-06 14:53:34.849 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 14:53:35.985 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 14:53:36.058 +08:00 [INF] Request finished in 76.6937ms 307 
+2020-02-06 14:53:36.113 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 14:53:36.163 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:53:36.214 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:36.480 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 14:53:36.514 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 14:53:36.600 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 14:53:36.957 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 14:53:37.006 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 778.4991ms
+2020-02-06 14:53:37.012 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 14:53:37.020 +08:00 [INF] Request finished in 907.4366ms 200 application/json; charset=utf-8
+2020-02-06 14:53:42.199 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:53:42.203 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:42.216 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:42.322 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:53:42.351 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 130.234ms
+2020-02-06 14:53:42.352 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:42.356 +08:00 [INF] Request finished in 156.3411ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:53:43.639 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:53:43.642 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:43.643 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:43.653 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:53:43.657 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 10.8567ms
+2020-02-06 14:53:43.659 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:43.661 +08:00 [INF] Request finished in 22.0953ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:53:44.504 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:53:44.508 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:44.530 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:44.539 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:53:44.543 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 8.8905ms
+2020-02-06 14:53:44.555 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:44.558 +08:00 [INF] Request finished in 54.4228ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:53:45.714 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:53:45.716 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:45.719 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:45.746 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:53:45.748 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 5.712ms
+2020-02-06 14:53:45.752 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:45.754 +08:00 [INF] Request finished in 40.1619ms 400 application/problem+json; charset=utf-8
+2020-02-06 14:53:46.510 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 14:53:46.512 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:46.515 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 14:53:46.523 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 14:53:46.526 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 7.2582ms
+2020-02-06 14:53:46.535 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 14:53:46.539 +08:00 [INF] Request finished in 28.412ms 400 application/problem+json; charset=utf-8
+2020-02-06 15:01:44.898 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:01:45.276 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 15:01:45.714 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 15:01:45.717 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 15:01:45.718 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 15:01:45.719 +08:00 [INF] Hosting environment: Development
+2020-02-06 15:01:45.720 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 15:01:46.941 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 15:01:47.016 +08:00 [INF] Request finished in 74.6838ms 307 
+2020-02-06 15:01:47.098 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 15:01:47.157 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:01:47.233 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:01:47.518 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:01:47.553 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:01:47.653 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:01:48.060 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:01:48.122 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 876.0019ms
+2020-02-06 15:01:48.125 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:01:48.133 +08:00 [INF] Request finished in 1035.9665ms 200 application/json; charset=utf-8
+2020-02-06 15:01:53.885 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 15:01:53.887 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:01:53.894 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:01:53.998 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-02-06 15:01:54.018 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 120.6552ms
+2020-02-06 15:01:54.020 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:01:54.023 +08:00 [INF] Request finished in 137.9655ms 400 application/problem+json; charset=utf-8
+2020-02-06 15:04:04.621 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:04:05.023 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 15:04:05.432 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 15:04:05.435 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 15:04:05.437 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 15:04:05.439 +08:00 [INF] Hosting environment: Development
+2020-02-06 15:04:05.440 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 15:04:06.370 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 15:04:06.460 +08:00 [INF] Request finished in 91.12ms 307 
+2020-02-06 15:04:06.512 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 15:04:06.567 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:04:06.621 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:04:06.979 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:04:07.031 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:04:07.184 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:04:07.519 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:04:07.581 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 941.2212ms
+2020-02-06 15:04:07.585 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:04:07.594 +08:00 [INF] Request finished in 1081.63ms 200 application/json; charset=utf-8
+2020-02-06 15:04:12.214 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 15:04:12.216 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:04:12.227 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:04:16.851 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-02-06 15:04:16.857 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 4625.8418ms
+2020-02-06 15:04:16.865 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:04:16.873 +08:00 [INF] Request finished in 4659.4078ms 422 application/json; charset=utf-8
+2020-02-06 15:06:56.627 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:06:57.004 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 15:06:57.372 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 15:06:57.373 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 15:06:57.375 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 15:06:57.376 +08:00 [INF] Hosting environment: Development
+2020-02-06 15:06:57.377 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 15:06:58.878 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 15:06:58.923 +08:00 [INF] Request finished in 49.7164ms 307 
+2020-02-06 15:06:59.001 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 15:06:59.044 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:06:59.106 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:06:59.397 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:06:59.434 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:06:59.557 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:06:59.952 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:06:59.998 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 880.7372ms
+2020-02-06 15:07:00.005 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:07:00.019 +08:00 [INF] Request finished in 1017.4478ms 200 application/json; charset=utf-8
+2020-02-06 15:07:03.219 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 15:07:03.222 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:07:03.240 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:07:05.370 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2020-02-06 15:07:05.376 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 2127.1398ms
+2020-02-06 15:07:05.392 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:07:05.400 +08:00 [INF] Request finished in 2180.9907ms 422 application/json; charset=utf-8
+2020-02-06 15:35:01.422 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:35:01.811 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 15:35:02.255 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 15:35:02.258 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 15:35:02.259 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 15:35:02.260 +08:00 [INF] Hosting environment: Development
+2020-02-06 15:35:02.260 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 15:35:03.358 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 15:35:03.525 +08:00 [INF] Request finished in 168.5659ms 307 
+2020-02-06 15:35:03.614 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 15:35:03.679 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:35:03.766 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:35:04.049 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:35:04.091 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:35:04.183 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:35:04.579 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:35:04.634 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 857.7568ms
+2020-02-06 15:35:04.642 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:35:04.653 +08:00 [INF] Request finished in 1039.5643ms 200 application/json; charset=utf-8
+2020-02-06 15:35:08.391 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/posts application/json 18
+2020-02-06 15:35:08.395 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:35:08.406 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:35:10.692 +08:00 [INF] Executing ObjectResult, writing value of type 'Blog.API.Helpers.ResourceValidationResult'.
+2020-02-06 15:35:10.713 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 2302.6862ms
+2020-02-06 15:35:10.715 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-06 15:35:10.738 +08:00 [INF] Request finished in 2347.2562ms 422 application/json; charset=utf-8
+2020-02-06 15:52:08.136 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:52:08.516 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 15:52:08.952 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 15:52:08.954 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 15:52:08.955 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 15:52:08.956 +08:00 [INF] Hosting environment: Development
+2020-02-06 15:52:08.957 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 15:52:09.974 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 15:52:10.039 +08:00 [INF] Request finished in 69.1946ms 307 
+2020-02-06 15:52:10.098 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 15:52:10.139 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:52:10.188 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:52:10.493 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:52:10.533 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:52:10.625 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:52:10.940 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:52:10.997 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 797.2869ms
+2020-02-06 15:52:11.004 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:52:11.012 +08:00 [INF] Request finished in 913.9269ms 200 application/json; charset=utf-8
+2020-02-06 15:52:17.085 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts application/json 18
+2020-02-06 15:52:17.088 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:52:17.090 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:52:17.111 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:52:17.127 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:52:17.154 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:52:17.176 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:52:17.187 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 94.375ms
+2020-02-06 15:52:17.215 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:52:17.224 +08:00 [INF] Request finished in 139.7081ms 200 application/json; charset=utf-8
+2020-02-06 15:53:12.414 +08:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/posts/1 application/json 64
+2020-02-06 15:53:12.416 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.UpdatePost (Blog.API)'
+2020-02-06 15:53:12.423 +08:00 [INF] Route matched with {action = "UpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePost(Int32, Blog.Infrastructure.Resources.PostUpdateResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:53:12.551 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:53:12.610 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2020-02-06 15:53:12.806 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@p3='?', @p0='?' (Size = 18), @p1='?', @p2='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Posts" SET "Body" = @p0, "LastModified" = @p1, "Title" = @p2
+WHERE "Id" = @p3;
+SELECT changes();
+2020-02-06 15:53:12.856 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-02-06 15:53:12.857 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.UpdatePost (Blog.API) in 427.3648ms
+2020-02-06 15:53:12.860 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.UpdatePost (Blog.API)'
+2020-02-06 15:53:12.863 +08:00 [INF] Request finished in 449.1498ms 204 
+2020-02-06 15:53:18.880 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1 application/json 64
+2020-02-06 15:53:18.893 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:18.915 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:53:18.922 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 15:53:18.928 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 9.2043ms
+2020-02-06 15:53:18.930 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:18.934 +08:00 [INF] Request finished in 54.0268ms 400 text/plain; charset=utf-8
+2020-02-06 15:53:24.316 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/1 application/json 64
+2020-02-06 15:53:24.318 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:24.332 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:53:24.343 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 15:53:24.346 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 5.8333ms
+2020-02-06 15:53:24.351 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:24.356 +08:00 [INF] Request finished in 40.108ms 400 text/plain; charset=utf-8
+2020-02-06 15:53:35.916 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts application/json 64
+2020-02-06 15:53:35.919 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:35.921 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:53:35.938 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:53:35.953 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:53:35.969 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:53:35.978 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:53:35.987 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 57.3203ms
+2020-02-06 15:53:35.998 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:36.001 +08:00 [INF] Request finished in 85.2648ms 200 application/json; charset=utf-8
+2020-02-06 15:53:38.068 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts application/json 64
+2020-02-06 15:53:38.087 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:38.089 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 15:53:38.099 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 15:53:38.109 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 15:53:38.134 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 15:53:38.149 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 15:53:38.155 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 62.7696ms
+2020-02-06 15:53:38.159 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 15:53:38.163 +08:00 [INF] Request finished in 94.6994ms 200 application/json; charset=utf-8
+2020-02-06 16:36:33.564 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:36:33.945 +08:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 16:36:34.379 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 16:36:34.387 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 16:36:34.388 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 16:36:34.390 +08:00 [INF] Hosting environment: Development
+2020-02-06 16:36:34.391 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 16:36:35.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 16:36:35.758 +08:00 [INF] Request finished in 54.8354ms 307 
+2020-02-06 16:36:35.810 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 16:36:35.867 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:36:35.924 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:36:36.179 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:36:36.215 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 16:36:36.299 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 16:36:36.593 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 16:36:36.655 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 709.9039ms
+2020-02-06 16:36:36.679 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:36:36.693 +08:00 [INF] Request finished in 883.3018ms 200 application/json; charset=utf-8
+2020-02-06 16:40:06.262 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts application/json-patch+json 119
+2020-02-06 16:40:06.265 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2020-02-06 16:40:06.266 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2020-02-06 16:40:06.268 +08:00 [INF] Request finished in 6.3118ms 405 
+2020-02-06 16:40:54.627 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:40:54.629 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:40:54.640 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:40:54.850 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-02-06 16:40:54.868 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API) in 222.353ms
+2020-02-06 16:40:54.869 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:40:54.876 +08:00 [INF] Request finished in 248.4703ms 400 application/problem+json; charset=utf-8
+2020-02-06 16:41:18.406 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:41:18.409 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:41:18.413 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:41:18.585 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-02-06 16:41:18.588 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API) in 166.9062ms
+2020-02-06 16:41:18.593 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:41:18.602 +08:00 [INF] Request finished in 196.258ms 400 application/problem+json; charset=utf-8
+2020-02-06 16:41:30.081 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:41:30.087 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:41:30.090 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:46:00.048 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:46:00.525 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 16:46:00.882 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 16:46:01.406 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 16:46:01.410 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 16:46:01.411 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 16:46:01.412 +08:00 [INF] Hosting environment: Development
+2020-02-06 16:46:01.413 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 16:46:02.938 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 16:46:03.020 +08:00 [INF] Request finished in 98.2439ms 307 
+2020-02-06 16:46:03.113 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 16:46:03.197 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:46:03.345 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:46:03.906 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:46:03.960 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 16:46:04.104 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 16:46:04.434 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 16:46:04.495 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1132.7376ms
+2020-02-06 16:46:04.503 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:46:04.513 +08:00 [INF] Request finished in 1399.1565ms 200 application/json; charset=utf-8
+2020-02-06 16:46:46.828 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:46:46.831 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:46:46.838 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:46:52.358 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-02-06 16:46:52.375 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API) in 5532.592ms
+2020-02-06 16:46:52.379 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:46:52.381 +08:00 [INF] Request finished in 5552.853ms 400 application/problem+json; charset=utf-8
+2020-02-06 16:47:26.108 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:47:26.506 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 16:47:26.664 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-06 16:47:27.104 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 16:47:27.105 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 16:47:27.119 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 16:47:27.121 +08:00 [INF] Hosting environment: Development
+2020-02-06 16:47:27.122 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 16:47:28.408 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 16:47:28.479 +08:00 [INF] Request finished in 75.4952ms 307 
+2020-02-06 16:47:28.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 16:47:28.588 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:47:28.657 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:47:28.968 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:47:29.006 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 16:47:29.129 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 16:47:29.423 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 16:47:29.486 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 807.5054ms
+2020-02-06 16:47:29.488 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:47:29.501 +08:00 [INF] Request finished in 965.1995ms 200 application/json; charset=utf-8
+2020-02-06 16:47:34.938 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:47:34.946 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:47:34.953 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:53:13.129 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:53:13.535 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-06 16:53:13.988 +08:00 [INF] Now listening on: https://localhost:5001
+2020-02-06 16:53:13.990 +08:00 [INF] Now listening on: http://localhost:5000
+2020-02-06 16:53:13.992 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-06 16:53:13.994 +08:00 [INF] Hosting environment: Development
+2020-02-06 16:53:13.995 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-06 16:53:15.313 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/posts  
+2020-02-06 16:53:15.390 +08:00 [INF] Request finished in 99.281ms 307 
+2020-02-06 16:53:15.464 +08:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/posts  
+2020-02-06 16:53:15.515 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:53:15.569 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:53:15.904 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:53:15.941 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 16:53:16.025 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 16:53:16.405 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 16:53:16.488 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 898.2764ms
+2020-02-06 16:53:16.493 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:53:16.505 +08:00 [INF] Request finished in 1040.3005ms 200 application/json; charset=utf-8
+2020-02-06 16:53:22.491 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/posts/3 application/json-patch+json 119
+2020-02-06 16:53:22.496 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:53:22.503 +08:00 [INF] Route matched with {action = "PartiallyUpdatePost", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdatePost(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Blog.Infrastructure.Resources.PostUpdateResource]) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:53:28.098 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:53:28.178 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+WHERE "p"."Id" = @__p_0
+LIMIT 1
+2020-02-06 16:53:31.605 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?', @p0='?' (Size = 4), @p1='?' (Size = 11), @p2='?', @p3='?', @p4='?' (Size = 13)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Posts" SET "Author" = @p0, "Body" = @p1, "LastModified" = @p2, "Remark" = @p3, "Title" = @p4
+WHERE "Id" = @p5;
+SELECT changes();
+2020-02-06 16:53:31.674 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2020-02-06 16:53:31.676 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API) in 9165.8021ms
+2020-02-06 16:53:31.678 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.PartiallyUpdatePost (Blog.API)'
+2020-02-06 16:53:31.683 +08:00 [INF] Request finished in 9192.1715ms 204 
+2020-02-06 16:53:45.035 +08:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:5001/api/post/3 application/json-patch+json 119
+2020-02-06 16:53:45.039 +08:00 [INF] Request finished in 4.0226ms 404 
+2020-02-06 16:53:49.634 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/post/3 application/json-patch+json 119
+2020-02-06 16:53:49.641 +08:00 [INF] Request finished in 7.078ms 404 
+2020-02-06 16:53:58.739 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/post/3 text/plain 119
+2020-02-06 16:53:58.742 +08:00 [INF] Request finished in 3.6756ms 404 
+2020-02-06 16:54:19.069 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/3 application/json 64
+2020-02-06 16:54:19.074 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:19.097 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:54:19.110 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 16:54:19.116 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 11.7287ms
+2020-02-06 16:54:19.118 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:19.124 +08:00 [INF] Request finished in 55.3791ms 400 text/plain; charset=utf-8
+2020-02-06 16:54:39.175 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/3?fields=title,id application/json 64
+2020-02-06 16:54:39.192 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:39.195 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:54:39.211 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 16:54:39.214 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 11.6042ms
+2020-02-06 16:54:39.226 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:39.229 +08:00 [INF] Request finished in 53.6918ms 400 text/plain; charset=utf-8
+2020-02-06 16:54:56.324 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/3?fields=title,id application/json 64
+2020-02-06 16:54:56.327 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:56.332 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:54:56.343 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 16:54:56.347 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 7.7268ms
+2020-02-06 16:54:56.355 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:54:56.361 +08:00 [INF] Request finished in 36.9849ms 400 text/plain; charset=utf-8
+2020-02-06 16:55:38.132 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts application/json 64
+2020-02-06 16:55:38.135 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:55:38.143 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:55:38.165 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-06 16:55:38.179 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-06 16:55:38.193 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-06 16:55:38.209 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-06 16:55:38.213 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 52.2077ms
+2020-02-06 16:55:38.214 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:55:38.216 +08:00 [INF] Request finished in 84.1879ms 200 application/json; charset=utf-8
+2020-02-06 16:55:45.739 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/posts/3 application/json 64
+2020-02-06 16:55:45.741 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:55:45.743 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-06 16:55:45.751 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-02-06 16:55:45.754 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 5.1034ms
+2020-02-06 16:55:45.760 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-06 16:55:45.763 +08:00 [INF] Request finished in 23.9116ms 400 text/plain; charset=utf-8

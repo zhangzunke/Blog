@@ -12,7 +12,7 @@ namespace Blog.Core.Entities
         private const int DefaultPageSize = 10;
         private const int DefaultMaxPageSize = 100;
         private int _pageIndex;
-        public int PageInde
+        public int PageIndex
         {
             get => _pageIndex;
             set => _pageIndex = value >= 0 ? value : 0;

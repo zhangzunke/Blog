@@ -17,6 +17,11 @@ using AutoMapper;
 using FluentValidation;
 using Blog.Infrastructure.Resources;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Blog.Infrastructure.Services;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.API
 {
@@ -36,16 +41,35 @@ namespace Blog.API
                 options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
                 options.HttpsPort = 5001;
             });
+
+            services.AddControllers(options =>
+            {
+                options.ReturnHttpNotAcceptable = true;
+                // options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter())
+            })
+            .AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            })
+            .AddFluentValidation();
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
-            services.AddTransient<IValidator<PostResource>, PostResourceValidator>();
+            services.AddTransient<IValidator<PostAddResource>, PostAddOrUpdateResourceValidator<PostAddResource>>();
+            services.AddTransient<IValidator<PostUpdateResource>, PostAddOrUpdateResourceValidator<PostUpdateResource>>();
+            services.AddTransient<ITypeHelperService, TypeHelperService>();
+            var propertyMappingContainer = new PropertyMappingContainer();
+            propertyMappingContainer.Register<PostPropertyMapping>();
+            services.AddSingleton<IPropertyMappingContainer>(propertyMappingContainer);
 
-            services.AddMvc(options => 
+            services.Configure<ApiBehaviorOptions>(options =>
             {
-                options.ReturnHttpNotAcceptable = true;
-                // options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter())
+                options.SuppressConsumesConstraintForFormFileParameters = true;
+                options.SuppressInferBindingSourcesForParameters = true;
+                options.SuppressModelStateInvalidFilter = true;
             });
         }
 

@@ -15,6 +15,10 @@ namespace Blog.API.Extensions
             CreateMap<Post, PostResource>()
                 .ForMember(dest => dest.UpdateTime, opt => opt.MapFrom(src => src.LastModified));
             CreateMap<PostResource, Post>();
+            CreateMap<Post, PostAddResource>();
+            CreateMap<PostAddResource, Post>();
+            CreateMap<Post, PostUpdateResource>();
+            CreateMap<PostUpdateResource, Post>();
         }
     }
 }

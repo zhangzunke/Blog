@@ -8,8 +8,10 @@ namespace Blog.Core.Interfaces
 {
     public interface IPostRepository
     {
-        Task<IEnumerable<Post>> GetAllPosts();
+        Task<PaginatedList<Post>> GetAllPostsAsync(PostParameters postParameters);
         Task<Post> GetPostByIdAsync(int id);
         Task AddPost(Post post);
+        void Delete(Post post);
+        void Update(Post post);
     }
 }
