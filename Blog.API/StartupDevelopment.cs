@@ -22,6 +22,9 @@ using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
+using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace Blog.API
 {
@@ -41,6 +44,13 @@ namespace Blog.API
                 options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
                 options.HttpsPort = 5001;
             });
+
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "https://localhost:5001";
+                    options.ApiName = "restapi";
+                });
 
             services.AddControllers(options =>
             {
@@ -71,12 +81,22 @@ namespace Blog.API
                 options.SuppressInferBindingSourcesForParameters = true;
                 options.SuppressModelStateInvalidFilter = true;
             });
+
+            services.Configure<MvcOptions>(options => 
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             //app.UseDeveloperExceptionPage();
+            app.UseAuthentication();
             app.UseMyExceptionHandler(loggerFactory);
             app.UseHttpsRedirection();
             app.UseRouting();

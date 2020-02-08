@@ -1,0 +1,103 @@
+2020-02-08 18:47:59.426 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-08 18:48:00.307 +08:00 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-08 18:48:01.003 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-08 18:48:03.479 +08:00 [INF] Now listening on: https://localhost:6001
+2020-02-08 18:48:05.497 +08:00 [INF] Now listening on: http://localhost:6000
+2020-02-08 18:48:05.501 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-08 18:48:05.509 +08:00 [INF] Hosting environment: Development
+2020-02-08 18:48:05.510 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-08 18:48:25.043 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts/3 application/json 64
+2020-02-08 18:48:28.989 +08:00 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-02-08 18:48:29.655 +08:00 [ERR] IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at IdentityServer4.AccessTokenValidation.IdentityServerAuthenticationHandler.HandleAuthenticateAsync()
+2020-02-08 18:48:29.719 +08:00 [INF] Bearer was not authenticated. Failure message: IDX20803: Unable to obtain configuration from: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-02-08 18:48:29.779 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-08 18:48:29.844 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32, System.String) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-08 18:48:29.864 +08:00 [INF] Authorization failed.
+2020-02-08 18:48:29.867 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2020-02-08 18:48:29.894 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2020-02-08 18:48:30.198 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2020-02-08 18:48:30.200 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-02-08 18:48:30.210 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 353.5236ms
+2020-02-08 18:48:30.214 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-08 18:48:30.237 +08:00 [INF] Request finished in 5197.5151ms 401 
+2020-02-08 19:04:18.392 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-08 19:04:18.885 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-08 19:04:18.982 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-08 19:04:19.402 +08:00 [INF] Now listening on: https://localhost:6001
+2020-02-08 19:04:19.408 +08:00 [INF] Now listening on: http://localhost:6000
+2020-02-08 19:04:19.409 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-08 19:04:19.410 +08:00 [INF] Hosting environment: Development
+2020-02-08 19:04:19.411 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-08 19:04:51.484 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:6001/api/posts  
+2020-02-08 19:04:52.386 +08:00 [INF] Successfully validated the token.
+2020-02-08 19:04:52.391 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-08 19:04:52.432 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-08 19:04:52.498 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-08 19:04:52.515 +08:00 [INF] Authorization was successful.
+2020-02-08 19:04:52.867 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-08 19:04:52.917 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-08 19:04:53.015 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY (SELECT 1)
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-08 19:04:53.183 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-08 19:04:53.235 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 726.2939ms
+2020-02-08 19:04:53.239 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-08 19:04:53.246 +08:00 [INF] Request finished in 1763.2044ms 200 application/json; charset=utf-8
