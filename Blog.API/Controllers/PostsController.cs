@@ -10,6 +10,7 @@ using Blog.Infrastructure.Database;
 using Blog.Infrastructure.Extensions;
 using Blog.Infrastructure.Resources;
 using Blog.Infrastructure.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +20,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace Blog.API.Controllers
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class PostsController : ControllerBase

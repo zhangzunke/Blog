@@ -25,7 +25,6 @@ using Microsoft.AspNetCore.Mvc;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
-
 namespace Blog.API
 {
     public class StartupDevelopment
@@ -82,6 +81,15 @@ namespace Blog.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
+            services.AddCors(options => 
+            {
+                options.AddPolicy("AllowAngularOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200")
+                    .WithExposedHeaders("X-Pagination")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
+            });
+
             services.Configure<MvcOptions>(options => 
             {
                 var policy = new AuthorizationPolicyBuilder()
@@ -96,6 +104,7 @@ namespace Blog.API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             //app.UseDeveloperExceptionPage();
+            app.UseCors("AllowAngularOrigin");
             app.UseAuthentication();
             app.UseMyExceptionHandler(loggerFactory);
             app.UseHttpsRedirection();
