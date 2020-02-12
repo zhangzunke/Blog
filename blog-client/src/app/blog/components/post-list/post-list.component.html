@@ -1,1 +1,11 @@
-<p>post-list works!</p>
+<div *ngIf="!pageMeta">
+  <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="pageMeta">
+  <button mat-fab color="warn" class="add-fab" [routerLink]="'/blog/write-post'" *ngIf="openIdConnectService.userAvailable">
+    <mat-icon aria-label="Add Post" svgIcon="baseline-add"></mat-icon>
+  </button>
+  <ng-container *ngFor="let post of posts">
+    <app-post-card [post]="post"></app-post-card>
+  </ng-container>
+</div>

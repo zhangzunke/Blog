@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../services/post.service';
 import { PostParameters } from '../../models/post-parameters';
+import { PageMeta } from 'src/app/shared/page-meta';
+import { Post } from '../../models/post';
+import { OpenIdConnectService } from 'src/app/shared/oidc/open-id-connect.service';
 
 @Component({
   selector: 'app-post-list',
@@ -9,7 +12,9 @@ import { PostParameters } from '../../models/post-parameters';
 })
 export class PostListComponent implements OnInit {
   postParameter = new PostParameters({ orderBy: 'id desc', pageSize: 10, pageIndex: 0 });
-  constructor(private postService: PostService) { }
+  pageMeta: PageMeta;
+  posts: Post[];
+  constructor(private postService: PostService, private openIdConnectService: OpenIdConnectService) { }
 
   ngOnInit() {
     this.getPosts();
@@ -17,7 +22,9 @@ export class PostListComponent implements OnInit {
 
   getPosts() {
     this.postService.getPagedPosts(this.postParameter).subscribe(resp => {
-      console.log(resp);
+      this.pageMeta = JSON.parse(resp.headers.get('X-Pagination')) as PageMeta;
+      this.posts = resp.body as Post[];
+      console.log(this.posts);
     });
   }
 

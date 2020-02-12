@@ -18,6 +18,9 @@ export class BlogAppComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('assets/menu-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'baseline-add',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/baseline-add-24px.svg'));
    }
 
   ngOnInit() {

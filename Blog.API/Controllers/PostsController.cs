@@ -20,7 +20,6 @@ using Newtonsoft.Json.Serialization;
 
 namespace Blog.API.Controllers
 {
-    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class PostsController : ControllerBase
