@@ -1,0 +1,726 @@
+2020-02-12 16:18:21.455 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:18:22.101 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Posts" AS "p")
+2020-02-12 16:18:22.190 +08:00 [INF] User profile is available. Using 'C:\Users\mzhang3\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-12 16:18:23.158 +08:00 [INF] Now listening on: https://localhost:6001
+2020-02-12 16:18:23.173 +08:00 [INF] Now listening on: http://localhost:6000
+2020-02-12 16:18:23.174 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-02-12 16:18:23.176 +08:00 [INF] Hosting environment: Development
+2020-02-12 16:18:23.179 +08:00 [INF] Content root path: D:\Mike Zhang\MyGitHub\Blog\Blog.API
+2020-02-12 16:21:50.138 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:21:50.160 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:21:50.174 +08:00 [INF] Request finished in 39.3804ms 204 
+2020-02-12 16:21:50.183 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:21:50.188 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:21:51.147 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:21:51.154 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:21:51.202 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:21:51.252 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:21:51.265 +08:00 [INF] Authorization was successful.
+2020-02-12 16:21:51.656 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:21:51.954 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:21:52.086 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:21:52.312 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:21:52.363 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1097.1477ms
+2020-02-12 16:21:52.365 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:21:52.371 +08:00 [INF] Request finished in 2187.2978ms 200 application/json; charset=utf-8
+2020-02-12 16:24:10.108 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:24:10.122 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:24:10.126 +08:00 [INF] Request finished in 19.5225ms 204 
+2020-02-12 16:24:10.142 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:24:10.144 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:24:10.151 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:24:10.153 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:24:10.158 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:24:10.161 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:24:10.176 +08:00 [INF] Authorization was successful.
+2020-02-12 16:24:10.214 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:24:10.236 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:24:10.263 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:24:10.279 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:24:10.284 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 108.609ms
+2020-02-12 16:24:10.294 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:24:10.296 +08:00 [INF] Request finished in 154.0311ms 200 application/json; charset=utf-8
+2020-02-12 16:39:09.942 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:39:09.946 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:39:09.952 +08:00 [INF] Request finished in 12.1056ms 204 
+2020-02-12 16:39:09.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:39:09.981 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:39:09.993 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:39:09.995 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:39:09.998 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:39:10.007 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:39:10.021 +08:00 [INF] Authorization was successful.
+2020-02-12 16:39:10.067 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:39:10.079 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:39:10.107 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:39:10.129 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:39:10.139 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 118.0565ms
+2020-02-12 16:39:10.142 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:39:10.151 +08:00 [INF] Request finished in 180.9942ms 200 application/json; charset=utf-8
+2020-02-12 16:40:26.016 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:40:26.023 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:40:26.025 +08:00 [INF] Request finished in 9.5805ms 204 
+2020-02-12 16:40:26.063 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:40:26.071 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:40:26.077 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:40:26.082 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:40:26.094 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:40:26.104 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:40:26.162 +08:00 [INF] Authorization was successful.
+2020-02-12 16:40:26.174 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:40:26.195 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:40:26.215 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:40:26.247 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:40:26.258 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 96.8437ms
+2020-02-12 16:40:26.262 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:40:26.265 +08:00 [INF] Request finished in 201.8714ms 200 application/json; charset=utf-8
+2020-02-12 16:42:05.394 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:42:05.401 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:42:05.404 +08:00 [INF] Request finished in 42.9941ms 204 
+2020-02-12 16:42:05.472 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:42:05.515 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:42:05.528 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:42:05.530 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:42:05.536 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:42:05.541 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:42:05.555 +08:00 [INF] Authorization was successful.
+2020-02-12 16:42:05.567 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:42:05.583 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:42:05.619 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:42:06.567 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:42:07.013 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 1460.0274ms
+2020-02-12 16:42:07.343 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:42:07.744 +08:00 [INF] Request finished in 2271.8507ms 200 application/json; charset=utf-8
+2020-02-12 16:43:57.473 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:43:57.475 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:43:57.477 +08:00 [INF] Request finished in 8.0564ms 204 
+2020-02-12 16:43:57.487 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:43:57.488 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:43:57.505 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:43:57.506 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:43:57.510 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:43:57.514 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:43:57.522 +08:00 [INF] Authorization was successful.
+2020-02-12 16:43:57.529 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:43:57.572 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:43:57.609 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:43:57.627 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:43:57.641 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 120.4745ms
+2020-02-12 16:43:57.644 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:43:57.647 +08:00 [INF] Request finished in 160.2012ms 200 application/json; charset=utf-8
+2020-02-12 16:51:06.633 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:51:06.639 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:51:06.649 +08:00 [INF] Request finished in 16.2045ms 204 
+2020-02-12 16:51:06.680 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:51:06.683 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:51:06.689 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:51:06.693 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:51:06.699 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:51:06.703 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:51:06.726 +08:00 [INF] Authorization was successful.
+2020-02-12 16:51:06.740 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:51:06.858 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:51:06.889 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:51:06.912 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:51:06.918 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 192.8823ms
+2020-02-12 16:51:06.930 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:51:06.933 +08:00 [INF] Request finished in 252.9793ms 200 application/json; charset=utf-8
+2020-02-12 16:52:28.301 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:52:28.313 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:52:28.316 +08:00 [INF] Request finished in 15.379ms 204 
+2020-02-12 16:52:28.355 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:52:28.361 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:52:28.376 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:52:28.383 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:52:28.388 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:52:28.392 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:52:28.401 +08:00 [INF] Authorization was successful.
+2020-02-12 16:52:28.417 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:52:28.546 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:52:28.581 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:52:28.613 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:52:28.630 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 230.2215ms
+2020-02-12 16:52:28.667 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:52:28.672 +08:00 [INF] Request finished in 316.0544ms 200 application/json; charset=utf-8
+2020-02-12 16:52:46.475 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:52:46.481 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:52:46.483 +08:00 [INF] Request finished in 8.8959ms 204 
+2020-02-12 16:52:46.489 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:52:46.492 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:52:46.496 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:52:46.497 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:52:46.501 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:52:46.503 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:52:46.512 +08:00 [INF] Authorization was successful.
+2020-02-12 16:52:46.517 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:52:46.527 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:52:46.542 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:52:46.557 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:52:46.563 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 51.8458ms
+2020-02-12 16:52:46.567 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:52:46.571 +08:00 [INF] Request finished in 81.2175ms 200 application/json; charset=utf-8
+2020-02-12 16:53:05.991 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:53:05.996 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:53:06.005 +08:00 [INF] Request finished in 14.0782ms 204 
+2020-02-12 16:53:06.020 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:53:06.022 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:53:06.026 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:53:06.027 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:53:06.029 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:53:06.035 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:53:06.045 +08:00 [INF] Authorization was successful.
+2020-02-12 16:53:06.052 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:53:06.061 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:53:06.077 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:53:06.093 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:53:06.097 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 52.5514ms
+2020-02-12 16:53:06.102 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:53:06.115 +08:00 [INF] Request finished in 94.1227ms 200 application/json; charset=utf-8
+2020-02-12 16:53:59.093 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:53:59.155 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:53:59.157 +08:00 [INF] Request finished in 64.0275ms 204 
+2020-02-12 16:53:59.181 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:53:59.198 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:53:59.203 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:53:59.205 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:53:59.208 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:53:59.211 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:53:59.222 +08:00 [INF] Authorization was successful.
+2020-02-12 16:53:59.230 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:53:59.243 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:53:59.262 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:53:59.291 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:53:59.305 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 83.6935ms
+2020-02-12 16:53:59.309 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:53:59.315 +08:00 [INF] Request finished in 134.0213ms 200 application/json; charset=utf-8
+2020-02-12 16:55:40.428 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:55:40.434 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:55:40.439 +08:00 [INF] Request finished in 11.3257ms 204 
+2020-02-12 16:55:40.456 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:55:40.457 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:55:40.465 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:55:40.479 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:55:40.504 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:55:40.584 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:55:40.614 +08:00 [INF] Authorization was successful.
+2020-02-12 16:55:40.640 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:55:40.664 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:55:40.701 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:55:40.715 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:55:40.718 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 105.0231ms
+2020-02-12 16:55:40.727 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:55:40.731 +08:00 [INF] Request finished in 276.4793ms 200 application/json; charset=utf-8
+2020-02-12 16:59:30.767 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:59:30.771 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:59:30.776 +08:00 [INF] Request finished in 9.7362ms 204 
+2020-02-12 16:59:30.790 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 16:59:30.795 +08:00 [INF] CORS policy execution successful.
+2020-02-12 16:59:30.801 +08:00 [INF] Successfully validated the token.
+2020-02-12 16:59:30.816 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 16:59:30.823 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:59:30.828 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 16:59:30.837 +08:00 [INF] Authorization was successful.
+2020-02-12 16:59:30.845 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 16:59:30.934 +08:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 16:59:30.965 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 16:59:30.975 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 16:59:30.981 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 144.3976ms
+2020-02-12 16:59:30.985 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 16:59:30.995 +08:00 [INF] Request finished in 204.9837ms 200 application/json; charset=utf-8
+2020-02-12 17:01:31.541 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:01:31.567 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:01:31.569 +08:00 [INF] Request finished in 28.0219ms 204 
+2020-02-12 17:01:31.579 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:01:31.582 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:01:31.588 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:01:31.590 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:01:31.593 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:01:31.604 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:01:31.621 +08:00 [INF] Authorization was successful.
+2020-02-12 17:01:31.627 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:01:31.652 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:01:31.676 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:01:31.690 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:01:31.696 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 73.4098ms
+2020-02-12 17:01:31.702 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:01:31.706 +08:00 [INF] Request finished in 126.6761ms 200 application/json; charset=utf-8
+2020-02-12 17:21:25.961 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:21:25.982 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:21:26.019 +08:00 [INF] Request finished in 57.8896ms 204 
+2020-02-12 17:21:26.048 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:21:26.050 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:21:26.088 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:21:26.115 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:21:26.130 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:21:26.133 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:21:26.142 +08:00 [INF] Authorization was successful.
+2020-02-12 17:21:26.159 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:21:26.182 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:21:26.217 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:21:26.233 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:21:26.253 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 112.1639ms
+2020-02-12 17:21:26.260 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:21:26.263 +08:00 [INF] Request finished in 214.9769ms 200 application/json; charset=utf-8
+2020-02-12 17:21:50.073 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:21:50.078 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:21:50.080 +08:00 [INF] Request finished in 6.3441ms 204 
+2020-02-12 17:21:50.094 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:21:50.097 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:21:50.104 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:21:50.106 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:21:50.108 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:21:50.111 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:21:50.145 +08:00 [INF] Authorization was successful.
+2020-02-12 17:21:50.167 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:21:50.378 +08:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:21:50.393 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:21:50.401 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:21:50.407 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 261.7625ms
+2020-02-12 17:21:50.409 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:21:50.411 +08:00 [INF] Request finished in 317.0328ms 200 application/json; charset=utf-8
+2020-02-12 17:22:08.403 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:22:08.446 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:22:08.451 +08:00 [INF] Request finished in 48.0973ms 204 
+2020-02-12 17:22:08.553 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:22:08.555 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:22:08.559 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:22:08.560 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:22:08.563 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:22:08.565 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:22:08.568 +08:00 [INF] Authorization was successful.
+2020-02-12 17:22:08.572 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:22:08.584 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:22:08.595 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:22:08.639 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:22:08.656 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 88.4589ms
+2020-02-12 17:22:08.671 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:22:08.673 +08:00 [INF] Request finished in 119.9206ms 200 application/json; charset=utf-8
+2020-02-12 17:23:29.444 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:23:29.449 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:23:29.450 +08:00 [INF] Request finished in 6.4681ms 204 
+2020-02-12 17:23:29.564 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:23:29.584 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:23:29.621 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:23:29.635 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:23:29.637 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:23:29.639 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:23:29.651 +08:00 [INF] Authorization was successful.
+2020-02-12 17:23:29.655 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:23:29.681 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:23:29.701 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:23:29.736 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:23:29.739 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 87.9293ms
+2020-02-12 17:23:29.760 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:23:29.762 +08:00 [INF] Request finished in 198.1654ms 200 application/json; charset=utf-8
+2020-02-12 17:27:32.924 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:27:32.977 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:27:32.978 +08:00 [INF] Request finished in 54.012ms 204 
+2020-02-12 17:27:32.992 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:27:32.997 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:27:33.000 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:27:33.005 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:27:33.009 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:27:33.011 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:27:33.014 +08:00 [INF] Authorization was successful.
+2020-02-12 17:27:33.017 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:27:33.029 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:27:33.041 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:27:33.052 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:27:33.056 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 42.0021ms
+2020-02-12 17:27:33.057 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:27:33.060 +08:00 [INF] Request finished in 67.1765ms 200 application/json; charset=utf-8
+2020-02-12 17:27:47.248 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:27:47.402 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:27:47.405 +08:00 [INF] Request finished in 157.7662ms 204 
+2020-02-12 17:27:47.448 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:27:47.468 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:27:47.471 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:27:47.475 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:27:47.486 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:27:47.499 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:27:47.520 +08:00 [INF] Authorization was successful.
+2020-02-12 17:27:47.532 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:27:47.552 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:27:47.575 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:27:47.590 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:27:47.596 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 75.9474ms
+2020-02-12 17:27:47.604 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:27:47.606 +08:00 [INF] Request finished in 157.917ms 200 application/json; charset=utf-8
+2020-02-12 17:31:52.368 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:31:52.628 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:31:52.631 +08:00 [INF] Request finished in 262.9055ms 204 
+2020-02-12 17:31:57.391 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:31:57.418 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:31:57.440 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:31:57.460 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:31:57.465 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:31:57.477 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:31:57.481 +08:00 [INF] Authorization was successful.
+2020-02-12 17:31:57.488 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:31:57.514 +08:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:31:57.546 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:31:57.648 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:31:57.677 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 196.7671ms
+2020-02-12 17:31:57.813 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:31:57.938 +08:00 [INF] Request finished in 546.7715ms 200 application/json; charset=utf-8
+2020-02-12 17:32:02.391 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:32:02.407 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:32:02.490 +08:00 [INF] Request finished in 98.5585ms 204 
+2020-02-12 17:32:02.494 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:32:02.503 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:32:02.505 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:32:02.507 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:32:02.509 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:32:02.511 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:32:02.520 +08:00 [INF] Authorization was successful.
+2020-02-12 17:32:02.523 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:32:02.537 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:32:02.560 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:32:02.576 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:32:02.578 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 58.2981ms
+2020-02-12 17:32:02.583 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:32:02.585 +08:00 [INF] Request finished in 90.5192ms 200 application/json; charset=utf-8
+2020-02-12 17:33:34.060 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:33:34.167 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:33:34.173 +08:00 [INF] Request finished in 113.7579ms 204 
+2020-02-12 17:33:34.185 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:33:34.203 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:33:34.208 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:33:34.211 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:33:34.213 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:33:34.215 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:33:34.218 +08:00 [INF] Authorization was successful.
+2020-02-12 17:33:34.221 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:33:34.236 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:33:34.264 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:33:34.332 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:33:34.346 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 128.6291ms
+2020-02-12 17:33:34.352 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:33:34.354 +08:00 [INF] Request finished in 168.6231ms 200 application/json; charset=utf-8
+2020-02-12 17:35:11.151 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:35:11.154 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:35:11.155 +08:00 [INF] Request finished in 4.0254ms 204 
+2020-02-12 17:35:11.167 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 17:35:11.175 +08:00 [INF] CORS policy execution successful.
+2020-02-12 17:35:11.178 +08:00 [INF] Successfully validated the token.
+2020-02-12 17:35:11.179 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 17:35:11.181 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:35:11.183 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 17:35:11.186 +08:00 [INF] Authorization was successful.
+2020-02-12 17:35:11.190 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 17:35:11.202 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 17:35:11.217 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 17:35:11.224 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 17:35:11.227 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 40.9641ms
+2020-02-12 17:35:11.229 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 17:35:11.231 +08:00 [INF] Request finished in 66.1067ms 200 application/json; charset=utf-8
+2020-02-12 18:03:51.286 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:03:51.305 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:03:51.342 +08:00 [INF] Request finished in 56.7048ms 204 
+2020-02-12 18:03:51.377 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:03:51.378 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:03:51.383 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:03:51.402 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:03:51.463 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:03:51.492 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:03:51.496 +08:00 [INF] Authorization was successful.
+2020-02-12 18:03:51.509 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:03:51.526 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 18:03:51.551 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 18:03:51.570 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 18:03:51.573 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 77.6609ms
+2020-02-12 18:03:51.587 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:03:51.589 +08:00 [INF] Request finished in 212.2706ms 200 application/json; charset=utf-8
+2020-02-12 18:05:49.609 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts  
+2020-02-12 18:05:49.612 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:05:49.615 +08:00 [INF] Request finished in 5.0616ms 204 
+2020-02-12 18:05:49.628 +08:00 [INF] Request starting HTTP/2 POST https://localhost:6001/api/posts application/json 374
+2020-02-12 18:05:49.629 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:05:49.632 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:05:49.633 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:05:49.639 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-12 18:05:49.652 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:05:49.655 +08:00 [INF] Authorization was successful.
+2020-02-12 18:05:53.250 +08:00 [INF] Executing ObjectResult, writing value of type 'Blog.API.Helpers.ResourceValidationResult'.
+2020-02-12 18:05:53.298 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 3642.686ms
+2020-02-12 18:05:53.306 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-12 18:05:53.310 +08:00 [INF] Request finished in 3682.1441ms 422 application/json; charset=utf-8
+2020-02-12 18:05:55.335 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:05:55.353 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:05:55.361 +08:00 [INF] Request finished in 25.8872ms 204 
+2020-02-12 18:05:55.371 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:05:55.375 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:05:55.378 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:05:55.383 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:05:55.385 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:05:55.388 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:05:55.394 +08:00 [INF] Authorization was successful.
+2020-02-12 18:05:55.410 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:05:55.451 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 18:05:55.528 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 18:05:55.727 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 18:05:55.734 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 340.61ms
+2020-02-12 18:05:55.751 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:05:55.761 +08:00 [INF] Request finished in 389.8962ms 200 application/json; charset=utf-8
+2020-02-12 18:07:06.290 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts  
+2020-02-12 18:07:06.296 +08:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-02-12 18:07:06.297 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:07:06.299 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:07:06.305 +08:00 [INF] Authorization failed.
+2020-02-12 18:07:06.307 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2020-02-12 18:07:06.312 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2020-02-12 18:07:06.331 +08:00 [INF] AuthenticationScheme: BearerIdentityServerAuthenticationJwt was challenged.
+2020-02-12 18:07:06.333 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-02-12 18:07:06.335 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 30.1226ms
+2020-02-12 18:07:06.336 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:07:06.338 +08:00 [INF] Request finished in 47.9491ms 401 
+2020-02-12 18:09:13.137 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:09:13.139 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:13.141 +08:00 [INF] Request finished in 4.1238ms 204 
+2020-02-12 18:09:13.145 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:09:13.148 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:13.151 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:09:13.152 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:09:13.156 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:09:13.159 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:09:13.175 +08:00 [INF] Authorization was successful.
+2020-02-12 18:09:13.182 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:09:13.200 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 18:09:13.233 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 18:09:13.286 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 18:09:13.318 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 144.5301ms
+2020-02-12 18:09:13.321 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:09:13.323 +08:00 [INF] Request finished in 178.3967ms 200 application/json; charset=utf-8
+2020-02-12 18:09:22.010 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts  
+2020-02-12 18:09:22.012 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:22.013 +08:00 [INF] Request finished in 3.1867ms 204 
+2020-02-12 18:09:22.016 +08:00 [INF] Request starting HTTP/2 POST https://localhost:6001/api/posts application/json 58
+2020-02-12 18:09:22.019 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:22.029 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:09:22.030 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:09:22.032 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-12 18:09:22.034 +08:00 [INF] Route matched with {action = "Post", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Blog.Infrastructure.Resources.PostAddResource) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:09:22.037 +08:00 [INF] Authorization was successful.
+2020-02-12 18:09:22.055 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:09:22.266 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 5), @p1='?' (Size = 12), @p2='?', @p3='?', @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Author", "Body", "LastModified", "Remark", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT "Id"
+FROM "Posts"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2020-02-12 18:09:22.368 +08:00 [INF] Executing ObjectResult, writing value of type 'Blog.Infrastructure.Resources.PostResource'.
+2020-02-12 18:09:22.445 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Post (Blog.API) in 408.7624ms
+2020-02-12 18:09:22.448 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Post (Blog.API)'
+2020-02-12 18:09:22.450 +08:00 [INF] Request finished in 434.1071ms 201 application/json; charset=utf-8
+2020-02-12 18:09:22.477 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:09:22.480 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:22.481 +08:00 [INF] Request finished in 4.7174ms 204 
+2020-02-12 18:09:22.486 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:09:22.487 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:09:22.494 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:09:22.498 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:09:22.499 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:09:22.501 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:09:22.505 +08:00 [INF] Authorization was successful.
+2020-02-12 18:09:22.511 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:09:22.516 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 18:09:22.526 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 18:09:22.533 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 18:09:22.536 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 32.2735ms
+2020-02-12 18:09:22.544 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:09:22.545 +08:00 [INF] Request finished in 59.3013ms 200 application/json; charset=utf-8
+2020-02-12 18:11:13.557 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:11:13.563 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:11:13.580 +08:00 [INF] Request finished in 23.2479ms 204 
+2020-02-12 18:11:13.613 +08:00 [INF] Request starting HTTP/2 GET https://localhost:6001/api/posts?orderBy=id%20desc&pageSize=10&pageIndex=0  
+2020-02-12 18:11:13.616 +08:00 [INF] CORS policy execution successful.
+2020-02-12 18:11:13.646 +08:00 [INF] Successfully validated the token.
+2020-02-12 18:11:13.651 +08:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2020-02-12 18:11:13.655 +08:00 [INF] Executing endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:11:13.657 +08:00 [INF] Route matched with {action = "Get", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Blog.Core.Entities.PostParameters) on controller Blog.API.Controllers.PostsController (Blog.API).
+2020-02-12 18:11:13.661 +08:00 [INF] Authorization was successful.
+2020-02-12 18:11:13.670 +08:00 [INF] Entity Framework Core 3.1.1 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2020-02-12 18:11:13.677 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Posts" AS "p"
+2020-02-12 18:11:13.700 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_1='?', @__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Author", "p"."Body", "p"."LastModified", "p"."Remark", "p"."Title"
+FROM "Posts" AS "p"
+ORDER BY "p"."Id" DESC
+LIMIT @__p_1 OFFSET @__p_0
+2020-02-12 18:11:13.720 +08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Dynamic.ExpandoObject, System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2020-02-12 18:11:13.726 +08:00 [INF] Executed action Blog.API.Controllers.PostsController.Get (Blog.API) in 65.7039ms
+2020-02-12 18:11:13.730 +08:00 [INF] Executed endpoint 'Blog.API.Controllers.PostsController.Get (Blog.API)'
+2020-02-12 18:11:13.731 +08:00 [INF] Request finished in 118.2473ms 200 application/json; charset=utf-8
+2020-02-12 18:14:03.659 +08:00 [INF] Application is shutting down...
